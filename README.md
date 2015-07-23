@@ -1,5 +1,5 @@
 ## Overview
-The Movie Trailer Website is part of the [Udacity](http://udacity.com) Nanodegree Full Stack Web Developer program. It is website that allows users to see your favorite movies and watch the trailers.
+The Movie Trailer Website is part of the [Udacity](http://udacity.com) Nanodegree Full Stack Web Developer program. It is a website that allows users to see your favorite movies and watch the trailers.
 
 ## Table of contents
 
