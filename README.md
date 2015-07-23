@@ -56,7 +56,7 @@ movie_project/
 ├── media.pyc
 └── README.md
 ```
-The .pyc files are created by Python and contain byte code.  The fresh_tomatoes.html file is an html file that when opened in a browser contains the front end to the project.
+The .pyc files are created by Python and contain byte code.  The fresh_tomatoes.html file is a html file that when opened in a browser contains the front end to the project.
 
 ## Instructions
 
