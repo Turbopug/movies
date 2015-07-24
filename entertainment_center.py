@@ -3,7 +3,7 @@ import fresh_tomatoes
 import xml.etree.ElementTree as ET
 
 # Parse the movies.xml document 
-tree = ET.parse('docs\movies.xml')
+tree = ET.parse('movies.xml')
 
 root = tree.getroot()
 my_movies = []

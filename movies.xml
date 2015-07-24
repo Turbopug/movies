@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<data>
+	<movie>
+		<title>Star Wars</title>
+		<summary>The Imperial Forces -- under orders from cruel Darth Vader (David Prowse) -- hold Princess Leia (Carrie Fisher) hostage,
+		in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker (Mark Hamill) and Han Solo (Harrison Ford),
+		captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 (Kenny Baker) and C-3PO (Anthony Daniels)
+		to rescue the beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy.</summary>
+		<poster>https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg</poster>
+		<trailer>https://www.youtube.com/watch?v=9gvqpFbRKtQ</trailer>
+		<cast>Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing, Alec Guinness</cast>
+		<released>May 25, 1977</released>
+	</movie>
+	<movie>
+		<title>Big Trouble in Little China</title>
+		<summary>Jack Burton, a tough-talking, wisecracking truck driver whose hum-drum life on the road takes a sudden supernatural tailspin when
+	    his best friend's fiancee is kidnapped.</summary>
+		<poster>https://upload.wikimedia.org/wikipedia/en/7/76/Big_Trouble_in_Little_China_Film_Poster.jpg</poster>
+		<trailer>https://www.youtube.com/watch?v=592EiTD2Hgo</trailer>
+		<cast>Kurt Russell, Kim Cattrall, Dennis Dun</cast>
+		<released>July 2, 1986</released>
+	</movie>
+	<movie>
+		<title>Lord of the Rings</title>
+		<summary>In a small village in the Shire a young Hobbit named Frodo (Elijah Wood) has been entrusted with an ancient Ring. Now he must embark
+		on an epic quest to the Cracks of Doom in order to destroy it.</summary>
+		<poster>https://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg</poster>
+		<trailer>https://www.youtube.com/watch?v=V75dMMIW2B4</trailer>
+		<cast>Elijah Wood, Ian McKellen, Viggo Mortensen, Sean Astin, Liv Tyler, Sala Baker, Cate Blanchett, John Rhys-Davies, Billy Boyd, Dominic
+		Monaghan, Orlando Bloom, Christopher Lee, Hugo Weaving, Sean Bean, Ian Holm, Andy Serkis</cast>
+		<released>December 10, 2001</released>
+	</movie>
+	<movie>
+		<title>Pulp Fiction</title>
+		<summary>Hit men, gangsters and robbers converge in Quentin Tarantino's violent tale of revenge. Stars John Travolta Samuel L. Jackson Bruce Willis and Uma Thurman.</summary>
+		<poster>https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg</poster>
+		<trailer>https://www.youtube.com/watch?v=s7EdQ4FqbhY</trailer>
+		<cast>John Travolta, Samuel L. Jackson, Uma Thurman, Harvey Keitel, Tim Roth, Amanda Plummer, Maria de Medeiros, Ving Rhames, Eric Stoltz,
+		Rosanna Arquette, Christopher Walken, Bruce Willis</cast>
+		<released>October 14, 1994</released>
+	</movie>
+	<movie>
+		<title>Wall-E</title>
+		<summary>WALL-E, short for Waste Allocation Load Lifter Earth-class, is the last robot left on Earth. He spends his days tidying up the planet,
+		one piece of garbage at a time. But during 700 years, WALL-E has developed a personality, and he's more than a little lonely. Then he spots
+		EVE (Elissa Knight), a sleek and shapely probe sent back to Earth on a scanning mission. Smitten WALL-E embarks on his greatest adventure
+		yet when he follows EVE across the galaxy.</summary>
+		<poster>https://upload.wikimedia.org/wikipedia/en/c/c2/WALL-Eposter.jpg</poster>
+		<trailer>https://www.youtube.com/watch?v=5RcNwlq7JSw</trailer>
+		<cast>Ben Burtt, Elissa Knight, Jeff Garlin, Fred Willard, John Ratzenberger, Kathy Najimy, Sigourney Weaver, MacInTalk</cast>
+		<released>June 27, 2008</released>
+	</movie>
+	<movie>
+		<title>Fear and Loathing in Las Vegas</title>
+		<summary>The basic synopsis revolves around journalist Raoul Duke (Hunter S. Thompson) and his attorney, Dr. Gonzo (Oscar Zeta Acosta), as they
+		arrive in 1970s Las Vegas to report on the Mint 400 motorcycle race. However, they soon abandon their work and begin experimenting with
+		a variety of recreational drugs, such as LSD, ether, cocaine, alcohol, mescaline, and cannabis. This leads to a series of bizarre hallucinogenic
+		trips, during which they destroy hotel rooms, wreck cars, and have visions of anthropomorphic desert animals, all the while ruminating on the
+		decline of culture in a city of insanity.</summary>
+		<poster>https://upload.wikimedia.org/wikipedia/en/6/6f/FandlinLV.jpg</poster>
+		<trailer>https://www.youtube.com/watch?v=_d0hEzXrWT4</trailer>
+		<cast>Johnny Depp, Benicio del Toro</cast>
+		<released>May 22, 1998</released>
+	</movie>
+</data>
