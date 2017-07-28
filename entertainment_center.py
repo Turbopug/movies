@@ -6,12 +6,12 @@ import xml.etree.ElementTree as ET
 tree = ET.parse('movies.xml')
 
 root = tree.getroot()
-my_movies = []
+movies = []
 
 # Iterates over the child elements and appends a new instance of
 # media.Movie class to the my_movies list.
 for movie in root.findall('movie'):
-    my_movies.append(media.Movie(movie.find('title').text,
+    movies.append(media.Movie(movie.find('title').text,
                                  movie.find('summary').text,
                                  movie.find('poster').text,
                                  movie.find('trailer').text,
@@ -19,5 +19,5 @@ for movie in root.findall('movie'):
                                  movie.find('released').text))
 
 # Create the html page with the list
-fresh_tomatoes.open_movies_page(my_movies)
+fresh_tomatoes.open_movies_page(movies)
 
