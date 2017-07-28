@@ -1,0 +1,207 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes by Scott Lilleboe</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+        .tooltip-wrap {
+          position: relative;
+        }
+        .tooltip-wrap .tooltip-content {
+          display: none;
+          position: absolute;
+          bottom: 5%;
+          left: 15%;
+          right: 5%;
+          background-color: #EEE;
+          padding: .5em;
+        }
+        .tooltip-wrap:hover .tooltip-content {
+          display: block;
+        }
+        body {
+	font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers by Scott Lilleboe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="9gvqpFbRKtQ" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg" width="220" height="342">
+    <div class="tooltip-wrap"><h3>Star Wars</h3>
+        <div align="left" class="tooltip-content">
+        <p><strong>Starring:</strong> Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing, Alec Guinness</p>
+        <p><strong>Summary:</strong> The Imperial Forces -- under orders from cruel Darth Vader (David Prowse) -- hold Princess Leia (Carrie Fisher) hostage,
+		in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker (Mark Hamill) and Han Solo (Harrison Ford),
+		captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 (Kenny Baker) and C-3PO (Anthony Daniels)
+		to rescue the beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy.</p>
+        <p align="left"><strong>Released:</strong> May 25, 1977</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="592EiTD2Hgo" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Big_Trouble_in_Little_China_Film_Poster.jpg" width="220" height="342">
+    <div class="tooltip-wrap"><h3>Big Trouble in Little China</h3>
+        <div align="left" class="tooltip-content">
+        <p><strong>Starring:</strong> Kurt Russell, Kim Cattrall, Dennis Dun</p>
+        <p><strong>Summary:</strong> Jack Burton, a tough-talking, wisecracking truck driver whose hum-drum life on the road takes a sudden supernatural tailspin when
+	    his best friend's fiancee is kidnapped.</p>
+        <p align="left"><strong>Released:</strong> July 2, 1986</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="V75dMMIW2B4" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/The_Fellowship_Of_The_Ring.jpg" width="220" height="342">
+    <div class="tooltip-wrap"><h3>Lord of the Rings</h3>
+        <div align="left" class="tooltip-content">
+        <p><strong>Starring:</strong> Elijah Wood, Ian McKellen, Viggo Mortensen, Sean Astin, Liv Tyler, Sala Baker, Cate Blanchett, John Rhys-Davies, Billy Boyd, Dominic
+		Monaghan, Orlando Bloom, Christopher Lee, Hugo Weaving, Sean Bean, Ian Holm, Andy Serkis</p>
+        <p><strong>Summary:</strong> In a small village in the Shire a young Hobbit named Frodo (Elijah Wood) has been entrusted with an ancient Ring. Now he must embark
+		on an epic quest to the Cracks of Doom in order to destroy it.</p>
+        <p align="left"><strong>Released:</strong> December 10, 2001</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="s7EdQ4FqbhY" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg" width="220" height="342">
+    <div class="tooltip-wrap"><h3>Pulp Fiction</h3>
+        <div align="left" class="tooltip-content">
+        <p><strong>Starring:</strong> John Travolta, Samuel L. Jackson, Uma Thurman, Harvey Keitel, Tim Roth, Amanda Plummer, Maria de Medeiros, Ving Rhames, Eric Stoltz,
+		Rosanna Arquette, Christopher Walken, Bruce Willis</p>
+        <p><strong>Summary:</strong> Hit men, gangsters and robbers converge in Quentin Tarantino's violent tale of revenge. Stars John Travolta Samuel L. Jackson Bruce Willis and Uma Thurman.</p>
+        <p align="left"><strong>Released:</strong> October 14, 1994</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="5RcNwlq7JSw" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/WALL-Eposter.jpg" width="220" height="342">
+    <div class="tooltip-wrap"><h3>Wall-E</h3>
+        <div align="left" class="tooltip-content">
+        <p><strong>Starring:</strong> Ben Burtt, Elissa Knight, Jeff Garlin, Fred Willard, John Ratzenberger, Kathy Najimy, Sigourney Weaver, MacInTalk</p>
+        <p><strong>Summary:</strong> WALL-E, short for Waste Allocation Load Lifter Earth-class, is the last robot left on Earth. He spends his days tidying up the planet,
+		one piece of garbage at a time. But during 700 years, WALL-E has developed a personality, and he's more than a little lonely. Then he spots
+		EVE (Elissa Knight), a sleek and shapely probe sent back to Earth on a scanning mission. Smitten WALL-E embarks on his greatest adventure
+		yet when he follows EVE across the galaxy.</p>
+        <p align="left"><strong>Released:</strong> June 27, 2008</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_d0hEzXrWT4" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/FandlinLV.jpg" width="220" height="342">
+    <div class="tooltip-wrap"><h3>Fear and Loathing in Las Vegas</h3>
+        <div align="left" class="tooltip-content">
+        <p><strong>Starring:</strong> Johnny Depp, Benicio del Toro</p>
+        <p><strong>Summary:</strong> The basic synopsis revolves around journalist Raoul Duke (Hunter S. Thompson) and his attorney, Dr. Gonzo (Oscar Zeta Acosta), as they
+		arrive in 1970s Las Vegas to report on the Mint 400 motorcycle race. However, they soon abandon their work and begin experimenting with
+		a variety of recreational drugs, such as LSD, ether, cocaine, alcohol, mescaline, and cannabis. This leads to a series of bizarre hallucinogenic
+		trips, during which they destroy hotel rooms, wreck cars, and have visions of anthropomorphic desert animals, all the while ruminating on the
+		decline of culture in a city of insanity.</p>
+        <p align="left"><strong>Released:</strong> May 22, 1998</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </body>
+</html>
