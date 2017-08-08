@@ -24,7 +24,7 @@
 		<title>Lord of the Rings</title>
 		<summary>In a small village in the Shire a young Hobbit named Frodo (Elijah Wood) has been entrusted with an ancient Ring. Now he must embark
 		on an epic quest to the Cracks of Doom in order to destroy it.</summary>
-		<poster>./The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_(2001)_theatrical_poster.jpg</poster>
+		<poster>./img/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_(2001)_theatrical_poster.jpg</poster>
 		<trailer>https://www.youtube.com/watch?v=V75dMMIW2B4</trailer>
 		<cast>Elijah Wood, Ian McKellen, Viggo Mortensen, Sean Astin, Liv Tyler, Sala Baker, Cate Blanchett, John Rhys-Davies, Billy Boyd, Dominic
 		Monaghan, Orlando Bloom, Christopher Lee, Hugo Weaving, Sean Bean, Ian Holm, Andy Serkis</cast>
@@ -33,7 +33,7 @@
 	<movie>
 		<title>The Transformers: The Movie</title>
 		<summary>In 2005, the war between the Autobots and Decepticons has culminated in the Decepticons conquering their home planet Cybertron, while the Autobots operate from its two moons preparing a counter-offensive.</summary>
-		<poster>./220px-Transformers-movieposter-west.jpg</poster>
+		<poster>./img/220px-Transformers-movieposter-west.jpg</poster>
 		<trailer>https://www.youtube.com/watch?v=Sh3HW3mZAoQ</trailer>
 		<cast>Peter Cullen, Judd Nelson, Robert Stack, Leonard Nimoy, Orson Welles</cast>
 		<released>August 8, 1986</released>
@@ -52,7 +52,7 @@
 	<movie>
 		<title>Guardians of the Galaxy Vol. 2</title>
 		<summary>In 2014, Peter Quill, Gamora, Drax, Rocket, and Baby Groot are renowned as the Guardians of the Galaxy.</summary>
-		<poster>./GotG_Vol2_poster.jpg</poster>
+		<poster>./img/GotG_Vol2_poster.jpg</poster>
 		<trailer>https://www.youtube.com/watch?v=dW1BIid8Osg</trailer>
 		<cast>Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper, Michael Rooker, Karen Gillan, Pom Klementieff, Kurt Russell</cast>
 		<released>May 5, 2017</released>
